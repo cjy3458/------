@@ -2,7 +2,7 @@ import React from "react";
 import { styled } from "styled-components";
 import { useNavigate } from "react-router-dom";
 
-const LoginNavBar = () => {
+const ContinentNavBar = () => {
   const router = useNavigate();
 
   const onClick = () => {
@@ -18,10 +18,9 @@ const LoginNavBar = () => {
   );
 };
 
-export default LoginNavBar;
+export default ContinentNavBar;
 
 const Wrapper = styled.div`
-  position: fixed;
   width: 100%;
   display: flex;
   align-items: center;

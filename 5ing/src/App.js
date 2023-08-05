@@ -1,7 +1,7 @@
-
 import LandingPage from "./pages/LandingPage";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import LoginPage from "./pages/LoginPage";
+import ContinentSelectPage from "./pages/ContinentSelectPage";
 
 function App() {
   return (
@@ -9,6 +9,7 @@ function App() {
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/login" element={<LoginPage />} />
+        <Route path="/continentSelect" element={<ContinentSelectPage />} />
       </Routes>
     </BrowserRouter>
   );
