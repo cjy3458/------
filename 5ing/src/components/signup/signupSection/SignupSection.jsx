@@ -1,7 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { styled } from "styled-components";
 
 const SignupSection = () => {
+  const [isMento, setIsMento] = useState(true);
+  const router = useNavigate();
+
+  const clickMento = () => {
+    setIsMento(true);
+    router("/mentoSignup");
+  };
+
+  const clickMenti = () => {
+    setIsMento(false);
+    router("/mentiSignup");
+  };
+
   return (
     <Wrapper>
       <ImageWrapper>
@@ -9,8 +23,12 @@ const SignupSection = () => {
       </ImageWrapper>
       <SignupWrapper>
         <Title>교환학생 다녀왔덕?</Title>
-        <ExchangeBtn>아니. 지금 교환학생 준비 중이야!</ExchangeBtn>
-        <ExchangeBtn>웅. 지금 파견 중 / 파견 후야!</ExchangeBtn>
+        <ExchangeBtn onClick={clickMenti}>
+          아니. 지금 교환학생 준비 중이야!
+        </ExchangeBtn>
+        <ExchangeBtn onClick={clickMento}>
+          웅. 지금 파견 중 / 파견 후야!
+        </ExchangeBtn>
       </SignupWrapper>
     </Wrapper>
   );
