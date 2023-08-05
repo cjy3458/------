@@ -1,11 +1,9 @@
 import React from "react";
-import ContinentNavBar from "../header/ContinentNavBar";
 import { styled } from "styled-components";
 
 const ContinentSection = () => {
   return (
     <>
-      <ContinentNavBar />
       <SectionWrapper>
         <LogoWrap>
           <Image1 src="img/adventureduck.png" />
@@ -64,7 +62,20 @@ export default ContinentSection;
 
 const CircleWrapper = styled.div`
   position: relative; /* 컨테이너를 상대적인 위치로 설정합니다. */
-  display: inline-block; /* 컨테이너 크기를 이미지 크기에 맞게 설정합니다. */
+  display: inline-block;
+  color: white;
+  cursor: pointer;
+  img:hover {
+    transition: 0.3s;
+    opacity: 50%;
+  }
+  &:hover {
+    color: black;
+    img {
+      transition: 0.3s;
+      opacity: 50%;
+    }
+  }
 `;
 
 const TextWrapper = styled.div`
@@ -82,7 +93,6 @@ const Text3 = styled.div`
   top: 58%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
   width: 60%;
   font-size: 10px;
   font-weight: bold;
@@ -96,7 +106,6 @@ const Text2 = styled.div`
   top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
   font-size: 16px;
   font-weight: bold;
 `;

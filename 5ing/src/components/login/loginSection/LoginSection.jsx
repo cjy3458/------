@@ -25,7 +25,7 @@ const LoginSection = () => {
           </TextWrap>
         </Form>
         <BtnWrapper>
-          <CustomLink>계정 만들기</CustomLink>
+          <CustomLink to="/signup">계정 만들기</CustomLink>
           <LoginBtn>로그인</LoginBtn>
         </BtnWrapper>
       </LoginWrapper>
@@ -51,6 +51,7 @@ const TextWrap = styled.div`
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
+  margin-top: 20px;
 `;
 
 const ImageWrapper = styled.div`
