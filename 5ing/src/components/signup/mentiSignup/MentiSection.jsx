@@ -2,6 +2,8 @@ import React from "react";
 import { styled } from "styled-components";
 import SignupBtn from "../signupBtn/SignupBtn";
 import PasswordInput from "./PasswordInput";
+import UnivDropdown from "./UnivDropdown";
+import MajorDropdown from "./MajorDropdown";
 
 const MentiSection = () => {
   return (
@@ -21,30 +23,20 @@ const MentiSection = () => {
             <Input></Input>
             <Btn>중복확인</Btn>
           </InputWrapper>
-          <InputWrapper>
-            <Text>패스워드</Text>
-            <PasswordInput />
-          </InputWrapper>
-          <InputWrapper>
-            <Text>패스워드 확인</Text>
-            <Input></Input>
-          </InputWrapper>
+          <PasswordInput />
           <Title2>학교/전공 정보</Title2>
           <Line />
           <InputWrapper>
             <Text>학교 선택</Text>
-            <Input placeholder="한글로 닉네임을 입력하세요."></Input>
+            <UnivDropdown />
           </InputWrapper>
           <InputWrapper>
             <Text>전공 선택</Text>
-            <Input></Input>
+            <MajorDropdown />
           </InputWrapper>
           <InputWrapper>
             <Text>이메일</Text>
-            <Input
-              placeholder="영어, 숫자, 특수문자 포함 6~12자"
-              type="email"
-            ></Input>
+            <Input placeholder="example@gmail.com" type="email"></Input>
             <Btn>인증</Btn>
           </InputWrapper>
           <InputWrapper>
