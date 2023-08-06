@@ -51,7 +51,6 @@ const Title = styled.div`
   margin-top: 5%;
   width: 95%;
   color: #454545;
-  font-family: SUITE;
   font-size: 4rem;
   font-style: normal;
   font-weight: 700;
@@ -119,5 +118,5 @@ const Floor = styled.div`
   bottom: 0;
   width: 100%;
   height: 110px;
-  background: linear-gradient(180deg, #8FC48A 0%, #67B162 100%);
+  background: linear-gradient(180deg, #8fc48a 0%, #67b162 100%);
 `;

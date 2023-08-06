@@ -1,7 +1,7 @@
 import React from "react";
 
 const MentorSection = () => {
-  return <div>MentoSection</div>;
+  return <div>MentorSection</div>;
 };
 
 export default MentorSection;

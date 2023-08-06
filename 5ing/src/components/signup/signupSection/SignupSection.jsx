@@ -1,18 +1,18 @@
-import React, { useState } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 import { styled } from "styled-components";
 
 const SignupSection = () => {
-  const [isMentor, setIsMentor] = useState(true);
+  // const [isMentor, setIsMentor] = useState(true);
   const router = useNavigate();
 
   const clickMentor = () => {
-    setIsMentor(true);
+    // setIsMentor(true);
     router("/mentorSignup");
   };
 
   const clickMentee = () => {
-    setIsMentor(false);
+    // setIsMentor(false);
     router("/menteeSignup");
   };
 
