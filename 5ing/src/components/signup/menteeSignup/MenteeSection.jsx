@@ -5,7 +5,7 @@ import PasswordInput from "./PasswordInput";
 import UnivDropdown from "./UnivDropdown";
 import MajorDropdown from "./MajorDropdown";
 
-const MentiSection = () => {
+const MenteeSection = () => {
   return (
     <>
       <Wrapper>
@@ -51,7 +51,7 @@ const MentiSection = () => {
   );
 };
 
-export default MentiSection;
+export default MenteeSection;
 
 const Btn = styled.button`
   width: 80px;

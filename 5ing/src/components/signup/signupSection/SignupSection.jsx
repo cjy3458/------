@@ -3,17 +3,17 @@ import { useNavigate } from "react-router-dom";
 import { styled } from "styled-components";
 
 const SignupSection = () => {
-  const [isMento, setIsMento] = useState(true);
+  const [isMentor, setIsMentor] = useState(true);
   const router = useNavigate();
 
-  const clickMento = () => {
-    setIsMento(true);
-    router("/mentoSignup");
+  const clickMentor = () => {
+    setIsMentor(true);
+    router("/mentorSignup");
   };
 
-  const clickMenti = () => {
-    setIsMento(false);
-    router("/mentiSignup");
+  const clickMentee = () => {
+    setIsMentor(false);
+    router("/menteeSignup");
   };
 
   return (
@@ -23,10 +23,10 @@ const SignupSection = () => {
       </ImageWrapper>
       <SignupWrapper>
         <Title>교환학생 다녀왔덕?</Title>
-        <ExchangeBtn onClick={clickMenti}>
+        <ExchangeBtn onClick={clickMentee}>
           아니. 지금 교환학생 준비 중이야!
         </ExchangeBtn>
-        <ExchangeBtn onClick={clickMento}>
+        <ExchangeBtn onClick={clickMentor}>
           웅. 지금 파견 중 / 파견 후야!
         </ExchangeBtn>
       </SignupWrapper>

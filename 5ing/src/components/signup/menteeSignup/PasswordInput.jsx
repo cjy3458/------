@@ -35,6 +35,7 @@ const PasswordInput = () => {
     if (password !== checkPw) {
       setText2("⚠️입력하신 비밀번호와 일치하지 않습니다!");
       setColor2("red");
+      setCheckPw("");
     } else {
       setText2("✅완료되었습니다.");
       setColor2("green");
@@ -50,6 +51,7 @@ const PasswordInput = () => {
             type="password"
             placeholder="영어, 숫자, 특수문자를 포함하여 6~12자"
             onChange={handlePasswordChange}
+            value={password}
             onBlur={validatePassword}
           />
           <Alert style={{ color: color }}>{text}</Alert>
@@ -62,6 +64,7 @@ const PasswordInput = () => {
             type="password"
             placeholder="위에 작성한 패스워드를 입력해주세요."
             onChange={handleCheck}
+            value={checkPw}
           />
           <Alert2 style={{ color: color2 }}>{text2}</Alert2>
         </PwWrapper>

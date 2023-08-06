@@ -1,7 +1,7 @@
 import React from "react";
 
-const MentoSection = () => {
+const MentorSection = () => {
   return <div>MentoSection</div>;
 };
 
-export default MentoSection;
+export default MentorSection;
