@@ -1,23 +1,30 @@
-import React from 'react'
-import TipCard from './TipCard';
-import { styled } from 'styled-components';
+import React from "react";
+import TipCard from "./TipCard";
+import { styled } from "styled-components";
+import { useNavigate } from "react-router-dom";
 
 const TipsModal = () => {
+  const router = useNavigate();
+
+  const onClick = () => {
+    router("/1");
+  };
+
   return (
     <Wrapper>
-    <Title>오리챗 멘토의 생생한 이야기를 들어보덕!</Title>
-    <CardWrapper>
-      <TipCard/>
-      <TipCard/>
-      <TipCard/>
-      <TipCard/>
-      <TipCard/>
-      <TipCard/>
-      <TipCard/>
-    </CardWrapper>
-  </Wrapper>
-  )
-}
+      <Title>오리챗 멘토의 생생한 이야기를 들어보덕!</Title>
+      <CardWrapper>
+        <TipCard onClick={onClick} />
+        <TipCard />
+        <TipCard />
+        <TipCard />
+        <TipCard />
+        <TipCard />
+        <TipCard />
+      </CardWrapper>
+    </Wrapper>
+  );
+};
 
 export default TipsModal;
 
@@ -26,7 +33,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   height: fit-content;
-`
+`;
 
 const Title = styled.div`
   font-size: 2.7rem;
