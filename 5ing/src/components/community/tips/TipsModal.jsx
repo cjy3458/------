@@ -1,20 +1,13 @@
 import React from "react";
 import TipCard from "./TipCard";
 import { styled } from "styled-components";
-import { useNavigate } from "react-router-dom";
 
 const TipsModal = () => {
-  const router = useNavigate();
-
-  const onClick = () => {
-    router("/community/아시아/tips/1");
-  };
-
   return (
     <Wrapper>
       <Title>오리챗 멘토의 생생한 이야기를 들어보덕!</Title>
       <CardWrapper>
-        <TipCard onClick={onClick} />
+        <TipCard num="1" />
         <TipCard />
         <TipCard />
         <TipCard />

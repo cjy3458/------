@@ -27,7 +27,10 @@ function App() {
           <Route path="mentor" element={<MentorInfoModal />} />
           <Route path="tips" element={<TipsModal />} />
         </Route>
-        <Route path="/community/:continent/tips/1" element={<ViewPostPage />} />
+        <Route
+          path="/community/:continent/tips/:number"
+          element={<ViewPostPage />}
+        />
       </Routes>
     </BrowserRouter>
   );
