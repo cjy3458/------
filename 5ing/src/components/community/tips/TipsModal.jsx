@@ -7,7 +7,7 @@ const TipsModal = () => {
   const router = useNavigate();
 
   const onClick = () => {
-    router("/1");
+    router("/community/아시아/tips/1");
   };
 
   return (

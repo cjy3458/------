@@ -5,7 +5,7 @@ const ViewSection = () => {
   return (
     <Wrapper>
       <ViewWrapper>
-        <Title>(제목) 중국가면 꼭 해야할 TOP5</Title>
+        <Title>중국가면 꼭 해야할 일 TOP5</Title>
         <InfoSection>
           <MentorName>최재영</MentorName>
           <Date> 2023-08-07</Date>

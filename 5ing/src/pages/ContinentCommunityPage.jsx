@@ -86,6 +86,7 @@ const Title = styled.div`
   font-size: 3.3rem;
   font-weight: 600;
   margin-bottom: 1.1rem;
+  cursor: pointer;
 `;
 
 const Line = styled.img`
