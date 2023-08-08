@@ -5,11 +5,8 @@ import { styled } from "styled-components";
 const TipCard = ({ num }) => {
   const router = useNavigate();
 
-  const onClick = () => {
-    router(`/community/아시아/tips/${num}`);
-  };
   return (
-    <Card onClick={onClick}>
+    <Card onClick={() => router(`/viewPost/${num}`)}>
       <TopWrapper>{/* <ThumbnailImg src="/img/halfduck.png" /> */}</TopWrapper>
       <BottomWrapper>
         <Row>

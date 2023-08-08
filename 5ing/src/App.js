@@ -9,6 +9,7 @@ import ContinentCommunityPage from "./pages/ContinentCommunityPage";
 import MentorInfoModal from "./components/community/mentor/MentorInfoModal";
 import TipsModal from "./components/community/tips/TipsModal";
 import ViewPostPage from "./pages/ViewPostPage";
+import ApplyPage from "./pages/ApplyPage";
 
 function App() {
   return (
@@ -27,10 +28,8 @@ function App() {
           <Route path="mentor" element={<MentorInfoModal />} />
           <Route path="tips" element={<TipsModal />} />
         </Route>
-        <Route
-          path="/community/:continent/tips/:number"
-          element={<ViewPostPage />}
-        />
+        <Route path="/viewPost/:number" element={<ViewPostPage />} />
+        <Route path="/apply" element={<ApplyPage />} />
       </Routes>
     </BrowserRouter>
   );

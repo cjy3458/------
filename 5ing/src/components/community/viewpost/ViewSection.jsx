@@ -1,7 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { styled } from "styled-components";
 
 const ViewSection = () => {
+  const router = useNavigate();
+
+  const onClick = () => {
+    router("/apply");
+  };
   return (
     <Wrapper>
       <ViewWrapper>
@@ -10,7 +16,7 @@ const ViewSection = () => {
           <MentorName>최재영</MentorName>
           <Date> 2023-08-07</Date>
         </InfoSection>
-        <Image src="img/postimg.png" />
+        <Image src="/img/postimg.png" />
         <Post>
           Wish it was a bad trip Wish it was a movie 다 꿈이였음 좋겠지만서도
           yeah, lately I cannot let it go (cannot let it go) I cannot let it
@@ -83,7 +89,7 @@ const ViewSection = () => {
         </Post>
       </ViewWrapper>
       <Text>멘토와 대화를 나누고싶덕?</Text>
-      <Btn>오리챗 신청하기</Btn>
+      <Btn onClick={onClick}>오리챗 신청하기</Btn>
     </Wrapper>
   );
 };

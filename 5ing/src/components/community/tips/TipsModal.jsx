@@ -3,17 +3,15 @@ import TipCard from "./TipCard";
 import { styled } from "styled-components";
 
 const TipsModal = () => {
+  const length = 7;
+
   return (
     <Wrapper>
       <Title>오리챗 멘토의 생생한 이야기를 들어보덕!</Title>
       <CardWrapper>
-        <TipCard num="1" />
-        <TipCard />
-        <TipCard />
-        <TipCard />
-        <TipCard />
-        <TipCard />
-        <TipCard />
+        {Array.from({ length: length }, (_, index) => (
+          <TipCard key={index} num={index + 1} />
+        ))}
       </CardWrapper>
     </Wrapper>
   );

@@ -22,7 +22,7 @@ const ContinentCommunityPage = () => {
       <CommunityNavBar />
       <SectionWrapper>
         <MenuDom>
-          <Title>{continent}</Title>
+          <Title onClick={() => navigate("/1")}>{continent}</Title>
           <Line src="/img/line.png" />
           <SearchWrapper>
             <MenuBtnWrapper>
