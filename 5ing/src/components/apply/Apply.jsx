@@ -36,12 +36,12 @@ const Btn = styled.div`
   bottom: 0;
   margin-bottom: 1.5%;
   background-color: #ffd5d5;
+  color: black;
   z-index: 2;
   border-radius: 30px;
-  background: linear-gradient(180deg, #89cdf6 0%, #c5e9ff 100%);
-  color: white;
+  background: linear-gradient(180deg, #c5e9ff 0%, #89cdf6 100%);
   font-size: 2.3rem;
-  font-weight: 700;
+  font-weight: 580;
   cursor: pointer;
 `;
 
@@ -89,6 +89,7 @@ const ApplyWrapper = styled.div`
   z-index: 1;
   position: absolute;
   background-color: white;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
 `;
 
 const QuestionSection = styled.div`
@@ -96,6 +97,9 @@ const QuestionSection = styled.div`
   height: 30%;
   border: 3px solid var(--m-skyblue, #89cdf6);
   border-radius: 30px;
-  padding: 20px;
+  padding: 30px;
   background-color: white;
+  font-size: 16px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+  margin-bottom: 3%;
 `;
