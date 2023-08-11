@@ -78,6 +78,7 @@ const Wrapper = styled.div`
 
 const ApplyWrapper = styled.div`
   width: 33%;
+  min-width: 450px;
   height: 490px;
   border: 3px solid #89cdf6;
   display: flex;

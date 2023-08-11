@@ -18,7 +18,7 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<LandingPage />} />
+        <Route path="/25" element={<LandingPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/signup" element={<SignupPage />} />
         <Route path="/mentorsignup" element={<MentorSignupPage />} />
@@ -35,7 +35,7 @@ function App() {
         <Route path="/viewPost/:num" element={<ViewPostPage />} />
         <Route path="/apply" element={<ApplyPage />} />
         <Route path="/applyAlert" element={<ApplyAlertPage />} />
-        <Route path="/writeReview" element={<ReviewPage />} />
+        <Route path="/" element={<ReviewPage />} />
       </Routes>
     </>
   );
