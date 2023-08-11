@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { styled } from "styled-components";
 import CommunityNavBar from "../components/community/CommunityNavBar";
 import { Outlet, useLocation, useNavigate, useParams } from "react-router-dom";
-
+// 커뮤니티 페이지
 const ContinentCommunityPage = () => {
   const { pathname } = useLocation();
   const navigate = useNavigate();
@@ -22,7 +22,7 @@ const ContinentCommunityPage = () => {
       <CommunityNavBar />
       <SectionWrapper>
         <MenuDom>
-          <Title onClick={() => navigate("/1")}>{continent}</Title>
+          <Title>{continent}</Title>
           <Line src="/img/line.png" />
           <SearchWrapper>
             <MenuBtnWrapper>
@@ -86,7 +86,6 @@ const Title = styled.div`
   font-size: 3.3rem;
   font-weight: 600;
   margin-bottom: 1.1rem;
-  cursor: pointer;
 `;
 
 const Line = styled.img`

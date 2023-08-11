@@ -16,6 +16,11 @@ const ViewSection = () => {
           <MentorName>최재영</MentorName>
           <Date> 2023-08-07</Date>
         </InfoSection>
+        <Row1>
+          <Category>학교생활</Category>
+          <Category>어학준비</Category>
+          <Category>여행꿀팁</Category>
+        </Row1>
         <Image src="/img/postimg.png" />
         <Post>
           Wish it was a bad trip Wish it was a movie 다 꿈이였음 좋겠지만서도
@@ -123,6 +128,7 @@ const Text = styled.div`
 `;
 
 const Image = styled.img`
+  margin-top: 3%;
   height: 50%;
   width: 100%;
 `;
@@ -136,21 +142,25 @@ const Post = styled.div`
 
 const Date = styled.div`
   font-size: 14px;
-  padding: 7px;
+  text-align: center;
+  height: 100%;
 `;
 
 const MentorName = styled.div`
   font-size: 14px;
   font-weight: bold;
-  padding: 5px;
   border-radius: 5px;
-  border: 2px solid black;
+  text-align: center;
+  height: 100%;
 `;
 
 const InfoSection = styled.div`
   display: flex;
-  width: 30%;
-  justify-content: space-around;
+  width: fit-content;
+  height: 30px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
 `;
 
 const ViewWrapper = styled.div`
@@ -178,4 +188,23 @@ const Title = styled.div`
   color: black;
   font-weight: 800;
   margin-bottom: 10px;
+`;
+
+const Row1 = styled.div`
+  margin-top: 2%;
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+`;
+
+const Category = styled.div`
+  font-size: 15px;
+  width: fit-content;
+  padding: 10px 19px;
+  text-align: center;
+  border-radius: 30px;
+  border-radius: 30px;
+  background: #f8f8f8;
+  color: var(--m-skyblue, #89cdf6);
 `;
