@@ -19,7 +19,7 @@ const ChatModal = ({ name, isMentor }) => {
   return (
     <Wrapper>
       <ModalSection>
-        <Title>{name} 등록 완료</Title>
+        <Title>{name} 완료</Title>
         <Text>정성스런 {name} 고맙덕</Text>
         <SelectImage />
         <Btn onClick={() => router("/community/아시아")}>

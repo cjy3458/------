@@ -56,7 +56,6 @@ const Btn = styled.div`
   min-width: 60%;
   min-height: 52px;
   bottom: 0;
-  background-color: #ffd5d5;
   color: black;
   border-radius: 30px;
   background: linear-gradient(180deg, #c5e9ff 0%, #89cdf6 100%);

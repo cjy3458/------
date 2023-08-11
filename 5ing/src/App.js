@@ -35,7 +35,7 @@ function App() {
         <Route path="/viewPost/:num" element={<ViewPostPage />} />
         <Route path="/apply" element={<ApplyPage />} />
         <Route path="/applyAlert" element={<ApplyAlertPage />} />
-        <Route path="/review" element={<ReviewPage />} />
+        <Route path="/writeReview" element={<ReviewPage />} />
       </Routes>
     </>
   );

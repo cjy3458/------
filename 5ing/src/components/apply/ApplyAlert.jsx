@@ -64,7 +64,7 @@ const ApplyAlert = () => {
           </AnswerSection>
           <Btn onClick={onClick}>멘티에게 답변 보내기</Btn>
         </AnswerWrapper>
-        {modal && <ChatModal isMentor={false} name={"답변"} />}
+        {modal && <ChatModal isMentor={false} name={"답변 전송"} />}
       </Wrapper>
     </>
   );
