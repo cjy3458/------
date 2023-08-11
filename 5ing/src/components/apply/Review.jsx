@@ -111,8 +111,8 @@ const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 120%;
-  margin-top: 3%;
+  height: 80vh;
+  margin-top: 5%;
 `;
 
 const ReviewSection = styled.div`
