@@ -37,24 +37,21 @@ const MenteeModal = () => {
 export default MenteeModal;
 
 const ImageCircle = styled.div`
-  height: 43%;
+  height: 50%;
   aspect-ratio: 1 / 1;
-  background-color: #d9d9d9;
-  border-radius: 50%;
   background-color: var(--green, #7fbc7a);
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border: 2px solid #89cdf6; */
 `;
 
 const Image = styled.img`
-  margin-left: 1px;
-  margin-top: 23px;
-  width: 81%;
-  height: 85%;
-  /* object-fit: cover; */
-  border-radius: 42%;
+  width: 90%;
+  height: 80%;
+  margin-top: 22%;
+  object-fit: contain;
+  border-radius: 50%;
 `;
 
 const Btn = styled.div`

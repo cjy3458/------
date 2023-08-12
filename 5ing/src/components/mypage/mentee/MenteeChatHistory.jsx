@@ -13,13 +13,10 @@ const MenteeChatHistory = () => {
           </ProfileCircle>
           멘토덕
         </ProfileSection>
-        <ChatTitle>
+        <ChatTitle onClick={() => navigate(`/readAnswer`)}>
           00대학교에서 적응할 때 제일 힘들었던 점은 무엇인가요?{" "}
         </ChatTitle>
-        <BtnWrapper>
-          <Date>23/08/11 답변 완료</Date>
-          <Btn onClick={() => navigate(`/readAnswer`)}>답변 보기</Btn>
-        </BtnWrapper>
+        <Date>23/08/11 답변 완료</Date>
       </List>
     </>
   );
@@ -54,34 +51,31 @@ const ProfileCircle = styled.div`
   height: 50px;
   aspect-ratio: 1 / 1;
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
   @media (max-width: 900px) {
     height: 35px;
   }
 `;
 
 const ProfileImg = styled.img`
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 80%;
   object-fit: contain;
-  border-radius: 50%;
-  background-color: white;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
 `;
 
 const ChatTitle = styled.div`
   width: 55%;
   font-size: 1.8rem;
   font-weight: 300;
+  cursor: pointer;
   @media (max-width: 900px) {
     font-size: 1.3rem;
   }
-`;
-
-const BtnWrapper = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 3%;
-  width: 22%;
 `;
 
 const Date = styled.div`
@@ -90,22 +84,5 @@ const Date = styled.div`
   width: fit-content;
   @media (max-width: 900px) {
     font-size: 1rem;
-  }
-`;
-
-const Btn = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.7rem;
-  width: 90px;
-  height: 45px;
-  border-radius: 25.748px;
-  background: var(--m-skyblue, #89cdf6);
-  cursor: pointer;
-  @media (max-width: 900px) {
-    font-size: 1.2rem;
-    width: 75px;
-    height: 30px;
   }
 `;

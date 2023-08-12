@@ -17,7 +17,7 @@ const WaitChat = () => {
           00대학교로 교환학생을 가신 구체적인 이유가 궁금합니다!{" "}
         </ChatTitle>
         <BtnWrapper>
-          <AcceptBtn onClick={() => navigate(`/applyAlert`)}>수락 후 답변</AcceptBtn>
+          <AcceptBtn onClick={() => navigate(`/applyAlert`)}>답변</AcceptBtn>
           <RejectBtn>거절</RejectBtn>
         </BtnWrapper>
       </List>
@@ -54,14 +54,17 @@ const ProfileCircle = styled.div`
   height: 50px;
   aspect-ratio: 1 / 1;
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   @media (max-width: 900px) {
     height: 35px;
   }
 `;
 
 const ProfileImg = styled.img`
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 80%;
   object-fit: contain;
   border-radius: 50%;
   background-color: white;
@@ -93,13 +96,13 @@ const AcceptBtn = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 110px;
+  width: 55px;
   height: 45px;
   border-radius: 25.748px;
   background: var(--m-skyblue, #89cdf6);
   cursor: pointer;
   @media (max-width: 900px) {
-    width: 75px;
+    width: 40px;
     height: 30px;
   }
 `;
