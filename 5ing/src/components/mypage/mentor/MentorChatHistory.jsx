@@ -1,10 +1,17 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { styled } from "styled-components";
 
 const MentorChatHistory = () => {
+  const navigate = useNavigate();
+
+  const onClick = () => {
+    navigate("/checkAnswer");
+  };
+
   return (
     <>
-      <List>
+      <List onClick={onClick}>
         <ProfileSection>
           <ProfileCircle>
             <ProfileImg src="/img/minicloud_ori.png" />
@@ -98,6 +105,7 @@ const Btn = styled.div`
   height: 45px;
   border-radius: 25.748px;
   background: var(--m-skyblue, #89cdf6);
+  cursor: pointer;
   @media (max-width: 900px) {
     font-size: 1.2rem;
     width: 75px;
