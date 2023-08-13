@@ -4,12 +4,12 @@ import { styled } from "styled-components";
 
 const MentorModal = () => {
   const images = [
-    "/img/afreeca.png",
-    "/img/asia.png",
-    "/img/oseania.png",
-    "/img/northAm.png",
-    "/img/southAm.png",
-    "/img/europe.png",
+    "/img/duck1.png",
+    "/img/duck2.png",
+    "/img/duck3.png",
+    "/img/duck4.png",
+    "/img/duck5.png",
+    "/img/duck6.png",
   ];
   const navigate = useNavigate();
   const [currentImageIndex, setCurrentImageIndex] = useState(0);

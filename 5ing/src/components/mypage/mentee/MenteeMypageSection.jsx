@@ -17,7 +17,7 @@ const MenteeMypageSection = () => {
   return (
     <Wrapper>
       <SubWrapper>
-        <BackImg />
+      <BackImg />
         <ProfileSection>
           <ProfileCircle>
             <ProfileImg src="/img/mainduck.png" />
@@ -64,6 +64,8 @@ const BackImg = styled.div`
   position: absolute;
   top: 0%;
   background-color: #c5e5f6;
+  background-image: url('/img/mypageBanner.png');
+  background-repeat: repeat-x;
   height: 500px;
   width: 100%;
   z-index: -1;
