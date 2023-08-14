@@ -1,8 +1,13 @@
 import React from "react";
 import { styled } from "styled-components";
 import { Link } from "react-router-dom";
+import { mentorLogin } from "../../../apis/accounts";
 
 const LoginSection = () => {
+  const onClick = () => {
+    mentorLogin();
+  };
+
   return (
     <Wrapper>
       <ImageWrapper>
@@ -26,7 +31,7 @@ const LoginSection = () => {
         </Form>
         <BtnWrapper>
           <CustomLink to="/signup">계정 만들기</CustomLink>
-          <LoginBtn>로그인</LoginBtn>
+          <LoginBtn onClick={onClick}>로그인</LoginBtn>
         </BtnWrapper>
       </LoginWrapper>
     </Wrapper>

@@ -11,10 +11,7 @@ const IntroduceSection = () => {
           But wait a minute while I Make you mine, make you mine 떨리는 지금도
           You’re on my mind All the time I wanna tell you but I’m Super shy,
           super shy And I wanna go out with you Where you wanna go? (Huh?) Find
-          a lil spot Just sit and talk Looking pretty Follow me 우리 둘이 나란히
-          보이지? (봐) 내 눈이 (heh) 갑자기 빛나지 When you say I’m your dream
-          You don’t even know my name Do ya? You don’t even know my name Do
-          ya-a? 누구보다도
+          a lil spot Just sit and
         </Text>
       </IntroduceWrapper>
     </Wrapper>
@@ -29,20 +26,23 @@ const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: white;
   z-index: 1;
+  scroll-snap-align: start;
 `;
 
 const IntroduceWrapper = styled.div`
   width: 80%;
   flex-basis: 80%;
+  height: fit-content;
+  min-height: 730px;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
   background-color: #ffffff;
-  margin-bottom: 10%;
+  margin-bottom: 4%;
 `;
 
 const Title = styled.div`

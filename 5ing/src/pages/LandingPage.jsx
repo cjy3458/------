@@ -5,10 +5,13 @@ import MainSection from "../components/landing/main/MainSection";
 import IntroduceSection from "../components/landing/introduction/IntroduceSection";
 import ReviewSection from "../components/landing/review/ReviewSection";
 import CTABtn from "../components/landing/CTABtn";
+import ScrollBar from "../components/landing/ScrollBar";
+
 // 랜딩 페이지
 const LandingPage = () => {
   return (
     <>
+      <ScrollBar />
       <LandingNavBar />
       <SectionWrapper>
         <MainSection />
@@ -23,6 +26,7 @@ const LandingPage = () => {
 export default LandingPage;
 
 const SectionWrapper = styled.div`
+  scroll-snap-type: y mandatory;
   display: flex;
   flex-direction: column;
   align-items: center;
