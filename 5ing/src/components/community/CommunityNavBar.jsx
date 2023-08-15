@@ -2,9 +2,22 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { styled } from "styled-components";
 import SideBar from "./SideBar";
+import { useRecoilValue } from "recoil";
+import { isMentorAtom } from "../../recoil/atoms";
+import { mentorImgAtom } from "../../recoil/atoms";
 
 const CommunityNavBar = () => {
+  const isMentor = useRecoilValue(isMentorAtom);
+  const mentorImg = useRecoilValue(mentorImgAtom);
+
   const navigate = useNavigate();
+  const mypageBtnHandle = () => {
+    if (isMentor) {
+      navigate("/mypageMentor/chats");
+    } else {
+      navigate("/mypageMentee/chats");
+    }
+  };
 
   return (
     <Wrapper>
@@ -12,9 +25,13 @@ const CommunityNavBar = () => {
         <LogoImage src="/img/navlogo.png" />
       </LogoWrapper>
       <ButtonWrapper>
-         <SideBar/>
-        <ProfileCircle>
-          <ProfileImg src="/img/navprofile.png" />
+        <SideBar mypageBtnHandle={mypageBtnHandle} />
+        <ProfileCircle onClick={mypageBtnHandle}>
+          {isMentor ? (
+            <ProfileImg src={mentorImg} />
+          ) : (
+            <ProfileImg src="/img/mentee_profile.png" />
+          )}
         </ProfileCircle>
       </ButtonWrapper>
     </Wrapper>

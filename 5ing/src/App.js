@@ -43,8 +43,8 @@ function App() {
           <Route path="tips" element={<TipsModal />} />
         </Route>
         {/* 멘토정보 & 꿀팁게시물 */}
-        <Route path="/viewMentor/:num" element={<MentorInfoPage />} />
-        <Route path="/viewPost/:num" element={<ViewPostPage />} />
+        <Route path="/viewMentor/:continent/:id" element={<MentorInfoPage />} />
+        <Route path="/viewPost/:id" element={<ViewPostPage />} />
         {/* 오리챗 신청 */}
         <Route path="/apply" element={<ApplyPage />} />
         <Route path="/applyAlert" element={<ApplyAlertPage />} />
@@ -63,7 +63,7 @@ function App() {
         </Route>
         {/* 답변확인 페이지 */}
         <Route path="/readAnswer" element={<ReadAnswerPage />} />
-        <Route path="/checkAnswer" element={<CheckAnswerPage />} />
+        <Route path="/checkAnswer/:id" element={<CheckAnswerPage />} />
       </Routes>
     </>
   );
